@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 17px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        header{
+            background-color: grey;
+            text-align: center;
+        }
+        .left{
+            display: inline-block;
+            position: relative;
+            left: -379px;
+            color: white;
+            
+        }      
+        nav{
+            height: 50px;
+            padding: 10px;
+            text-align: center;
+            display: inline-block;
+            
+          
+            
+        }
+        nav ul{
+            padding: 15px;
+            display: inline-block;
+                        
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+                       
+        }
+        nav a:hover{
+            color: rgb(26, 25, 25); 
+        }
+        ul li{
+            display: inline;
+            padding: 6px;
+            padding top: 3px ;
+            color: white;
+        }
+        .right{
+            display: inline-block;
+            position: relative;
+            right: -369px;
+            
+        }
+        .right a{
+            text-decoration: none;
+            color: white;
+            padding: 4px;
+          
+        }
+        .right a:hover{
+                color: rgb(26, 25, 25);        }
+        .content{
+            height: 88vh;
+            background-color: rgb(204, 196, 196);
+            text-align: center;
+        }
+        /* footer{
+            height: 40px;
+            color: white;
+            text-align: center;
+            background-color: grey;
+        } */
+        .form{
+            margin: 21px;
+            padding: 8px;
+            background-color: #f2f2f2;
+            border: 2px solid grey;
+            border-radius: 6px;
+        }
+        .form p{
+            padding: 10px;
+        }
+        input[type="text"],
+        input[type="text"],
+        input[type="email"],
+        input[type="pincode"],
+        input[type="password"]
+        input[type="date"],
+        select,
+        input[type="file"]
+        {
+            margin: 2px;
+            padding: 4px;
+           
+            border: 2px solid grey;
+            border-radius: 5px;
+        }
+        input[type="submit"]
+        {
+           border-radius: 10px;
+           border: -1px solid grey;
+           padding: 10px;
+           width: 20%;
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(32, 32, 32);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+  
+        <nav>
+            <ul>
+                <li><a href="#" target="_blank">Home</a>  </li>
+                <li><a href="#" target="_blank">About</a> </li>
+                <li><a href="#" target="_blank">Contact</a> </li>
+            </ul>
+        </nav>
+        <div class="right">
+            <a href="#">Call Us</a>
+             <a href="#">Visit Us</a>
+        </div>
+    </header>
+   <br>
+    <main>
+        <div class="form">
+            <form action="/admin/addstudent" method="POST">
+            {{!-- <p> Id: <input type="text" name="_id"></p>  <br> --}}
+            <p> Name: <input type="text" name="name"></p>  <br>
+            <p>Email : <input type="email" name="email" id="email"></p>  <br>
+            <p>Phone <input type="pincode" name="phone" ></p>   <br>
+            <p>Enter Physics marks<input type="number" name="physics" id="physics"></p>
+            <p>Enter Physics marks<input type="number" name="maths" id="maths"></p>
+            <p>Enter Physics marks<input type="number" name="chem" id="chem"></p>
+               
+        <p> Password : <input type="password" name="password" id="password"></p> <br> 
+        <p>Confirm Password : <input type="password" name="confirmpassword" id="confirmpassword"></p> <br> 
+
+        <p><input type="submit" value="Sumbit">
+        <input type="submit" value="Reset">
+        </p> 
+        </form>
+        </div>
+    </main>
+  
+</body>
+</html>

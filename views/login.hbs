@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 17px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+       
+      
+        .form{
+            margin: 21px;
+            padding: 8px;
+            background-color: #f2f2f2;
+            border: 2px solid grey;
+            border-radius: 6px;
+        }
+        .form p{
+            padding: 10px;
+        }
+      
+        input[type="email"],
+        input[type="password"]
+      
+        {
+            margin: 2px;
+            padding: 4px;
+           
+            border: 2px solid grey;
+            border-radius: 5px;
+        }
+        input[type="submit"]
+        {
+           border-radius: 10px;
+           border: -1px solid grey;
+           padding: 10px;
+           width: 20%;
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(32, 32, 32);
+        }
+
+    </style>
+</head>
+<body>
+  
+   <br>
+    <main>
+        <div class="form">
+            <form action="/login" method="POST">
+                <p>Email : <input type="email" name="email" id="email"></p>  <br>    
+                <p> Password : <input type="password" name="password" id="password"></p> <br> 
+        <p><input type="submit" value="Sumbit">
+        </p> 
+        </form>
+        </div>
+    </main>
+  
+</body>
+</html>
